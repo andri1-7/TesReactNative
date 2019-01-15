@@ -21,6 +21,12 @@ DerivedData
 *.ipa
 *.xcuserstate
 project.xcworkspace
+ios/Pods/
+ios/Podfile.lock
+ios/*_appTests
+ios/*.xcworkspace/
+ios/*tv*
+ios/*.xcodeproj/xcshareddata
 
 # Android/IntelliJ
 #
@@ -29,6 +35,10 @@ build/
 .gradle
 local.properties
 *.iml
+android/gradlew*
+android/keystores/
+android/app/src/main/assets/index.android.bundle
+android/app/src/main/res/drawable-*
 
 # node.js
 #
@@ -51,6 +61,9 @@ buck-out/
 */fastlane/report.xml
 */fastlane/Preview.html
 */fastlane/screenshots
-
-# Bundle artifact
-*.jsbundle
+yarn.lock
+.babelrc
+.buckconfig
+.flowconfig
+.gitattributes
+.watchmanconfig
