@@ -10,6 +10,7 @@
     "native-base": "^2.10.0",
     "react": "16.4.1",
     "react-native": "0.56.1",
+    "react-native-image-crop-picker": "^0.21.3",
     "react-native-vector-icons": "^6.1.0"
   },
   "devDependencies": {
