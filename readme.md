@@ -5,7 +5,7 @@ Pull Request:<br>
 2. <code>react-native upgrade</code>
 3. answer no (n) for all questions
 
-Additional step (for iOS)
+Additional step (for iOS)<br>
 4. <code>cd ios</code>
 5. <code>pod install</code>
 6. <code>cd ..</code>
