@@ -19,3 +19,5 @@ Packages Include:<br>
 1. [Native Base v.2.10](https://nativebase.io)
 2. [React Native Vector Icons v.6.1.0](https://github.com/oblador/react-native-vector-icons)
 3. [React Native Image Crop Picker](https://github.com/ivpusic/react-native-image-crop-picker)
+4. [React Navigation v.3.x](https://reactnavigation.org/docs/en/getting-started.html)
+5. Redux (Includes: react-redux, redux, redux-logger, redux-thunk)
