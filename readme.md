@@ -75,3 +75,26 @@ Custom Libraries:
       }
     ...
   ```
+
+  * Hooks helpers, helper for your own custom functions<br>Code Examples:<br>
+  ```javascript
+    // Import all
+    import * as Hooks from 'path/to/Helpers/Hooks';
+
+    ...
+    let myValue = Hooks.yourCustomFunctionName(yourParams);
+    let myOtherValue = Hooks.yourOtherCustomFunctionName(yourOtherParams);
+    ...
+
+    // Or
+
+    import {
+      yourCustomFunctionName,
+      yourOtherCustomFunctionName
+    } from 'path/to/Helpers/Hooks';
+
+    ...
+    let myValue = yourCustomFunctionName(yourParams);
+    let myOtherValue = yourOtherCustomFunctionName(yourOtherParams);
+    ...
+  ```
