@@ -101,27 +101,51 @@ Custom Libraries:
 
   * Session Helpers, use to store detail of current session<br>Code Example:<br>
   ```javascript
-  // Always Prepare Session when the app is started (usually in Splash Screen)
-  import * as Session from 'path/to/Helpers/Session';
+    // Always Prepare Session when the app is started (usually in Splash Screen)
+    import * as Session from 'path/to/Helpers/Session';
 
-  ...
-  Session.prepare().then((sessionData) => {
-    // Do something with existed sessionData
-  }).catch((err) => {
-    console.log("Session Prepare Error", err.message);
-  });
-  ...
+    ...
+    Session.prepare().then((sessionData) => {
+      // Do something with existed sessionData
+    }).catch((err) => {
+      console.log("Session Prepare Error", err.message);
+    });
+    ...
   ```
   ```javascript
-  // Set Session Value
-  ...
-  let yourValue = 'my Name is Ajul';
-  Session.setValue(Session.YOUR_KEY, yourValue);
-  ...
+    // Set Session Value
+    ...
+    let yourValue = 'my Name is Ajul';
+    Session.setValue(Session.YOUR_KEY, yourValue);
+    ...
+    ```
+    ```javascript
+    // Get Session Value
+    ...
+    let myName = Session.getValue(Session.YOUR_KEY, 'default value');
+    ...
   ```
+
+  * Http Helpers, to handle Http Requests<br>Usage Example:<br>
   ```javascript
-  // Get Session Value
-  ...
-  let myName = Session.getValue(Session.YOUR_KEY, 'default value');
-  ...
+    ...
+    import HttpRequest from 'path/to/Helpers/Http';
+    ...
+
+    ...
+    let myRequest = {
+      link: 'myapi/endpoints',
+      method: 'POST',
+      data: {
+        id: 1,
+        name: 'my name is'
+      }
+    }
+
+    HttpRequest(myRequest).then((response) => {
+      // Do something with the response
+    }).catch((error) => {
+      // Do something with the error
+    });
+    ...
   ```
