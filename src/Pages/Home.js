@@ -5,6 +5,7 @@ import {Button, Icon, Text} from 'native-base';
 import { connect } from 'react-redux';
 
 import MainStyle from '../Styles/MainStyle';
+import lang from '../Helpers/Language';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -19,7 +20,7 @@ class Home extends Component<Props> {
     return (
       <View style={MainStyle.container}>
         <Icon name="facebook" type="FontAwesome" />
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
+        <Text style={styles.welcome}>Welcome to { lang('title.home') }!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
         <Button iconRight dark
