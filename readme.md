@@ -30,9 +30,11 @@ Included Examples:<br>
 Custom Libraries:
   * Language Helpers for multi languages app support<br>
   Code Example:<br>
-    - Load / displaying registered label
 
   ```javascript
+    /**
+     * Load / Display registered label
+     */
     ...
     import lang from 'path/to/Helpers/Language';
     ...
@@ -45,9 +47,10 @@ Custom Libraries:
     }
     ...
   ```
-    - Set current language
-
   ```javascript
+    /**
+     * Set current language
+     */
     ...
     import { setLanguage } from 'path/to/Helpers/Language';
     ...
@@ -58,9 +61,10 @@ Custom Libraries:
       }
     ...
   ```
-    - Get current language
-
   ```javascript
+    /**
+     * Get current language
+     */
     ...
     import { getLanguage } from 'path/to/Helpers/Language';
     ...
