@@ -5,7 +5,7 @@ After Pull:<br>
 2. <code>react-native upgrade</code>
 3. answer no (n) for all questions
 
-Additional step (for iOS)<br>
+Additional step (for iOS):<br>
 4. <code>cd ios</code>
 5. <code>pod install</code>
 6. <code>cd ..</code>
@@ -26,3 +26,48 @@ Included Examples:<br>
 1. Navigator Examples
 2. Redux Action & Reducers Example + Redux Store Configuration
 3. Separate Styles Example
+
+Custom Libraries:
+  * Language Helpers for multi languages app support<br>
+  Code Example:<br>
+    - Load / displaying registered label
+
+  ```javascript
+    ...
+    import lang from 'path/to/Helpers/Language';
+    ...
+
+    ...
+    render() {
+      return(
+        <Text>{ lang('title.home') }</Text>
+      );      
+    }
+    ...
+  ```
+    - Set current language
+
+  ```javascript
+    ...
+    import { setLanguage } from 'path/to/Helpers/Language';
+    ...
+
+    ...
+      changeLanguage() {
+        setLanguage('id');
+      }
+    ...
+  ```
+    - Get current language
+
+  ```javascript
+    ...
+    import { getLanguage } from 'path/to/Helpers/Language';
+    ...
+
+    ...
+      getCurrentLang() {
+        let currentLang = getLanguage();
+      }
+    ...
+  ```
