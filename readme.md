@@ -1,6 +1,6 @@
 # Ajhoel React Native Project Template
 
-Pull Request:<br>
+After Pull:<br>
 1. <code>yarn install</code>
 2. <code>react-native upgrade</code>
 3. answer no (n) for all questions
@@ -21,3 +21,8 @@ Packages Include:<br>
 3. [React Native Image Crop Picker](https://github.com/ivpusic/react-native-image-crop-picker)
 4. [React Navigation v.3.x](https://reactnavigation.org/docs/en/getting-started.html)
 5. Redux (Includes: react-redux, redux, redux-logger, redux-thunk)
+
+Included Examples:<br>
+1. Navigator Examples
+2. Redux Action & Reducers Example + Redux Store Configuration
+3. Separate Styles Example
