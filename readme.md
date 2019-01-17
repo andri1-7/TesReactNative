@@ -98,3 +98,30 @@ Custom Libraries:
     let myOtherValue = yourOtherCustomFunctionName(yourOtherParams);
     ...
   ```
+
+  * Session Helpers, use to store detail of current session<br>Code Example:<br>
+  ```javascript
+  // Always Prepare Session when the app is started (usually in Splash Screen)
+  import * as Session from 'path/to/Helpers/Session';
+
+  ...
+  Session.prepare().then((sessionData) => {
+    // Do something with existed sessionData
+  }).catch((err) => {
+    console.log("Session Prepare Error", err.message);
+  });
+  ...
+  ```
+  ```javascript
+  // Set Session Value
+  ...
+  let yourValue = 'my Name is Ajul';
+  Session.setValue(Session.YOUR_KEY, yourValue);
+  ...
+  ```
+  ```javascript
+  // Get Session Value
+  ...
+  let myName = Session.getValue(Session.YOUR_KEY, 'default value');
+  ...
+  ```
