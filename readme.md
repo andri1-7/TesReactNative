@@ -76,7 +76,7 @@ Custom Libraries:
     ...
   ```
   If you want to add another language (eg. French), here the steps:<br>
-    1. Create file `fr.js` inside Folder `Helpers/Language` with JSON variables
+    1. Create file `fr.js` with JSON variables inside Folder `Helpers/Language`
       ```javascript
         export const encoding = 'fr';
         export const lang = {
