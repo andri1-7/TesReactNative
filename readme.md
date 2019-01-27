@@ -1,16 +1,16 @@
 # Ajhoel React Native Project Template
 
 After Pull:<br>
-1. <code>yarn install</code>
-2. <code>react-native upgrade</code>
-3. answer no (n) for all questions
+1. `yarn install`
+2. `react-native upgrade`
+3. answer no (`n`) for all questions
 
 Additional step (for iOS):<br>
-4. <code>cd ios</code>
-5. <code>pod install</code>
-6. <code>cd ..</code>
+4. `cd ios`
+5. `pod install`
+6. `cd ..`
 
-7. <code>react-native run-ios</code> / <code>react-native run-android</code>
+7. `react-native run-ios` / `react-native run-android`
 
 Project information:<br>
 1. React Native v.0.56.1
@@ -75,6 +75,31 @@ Custom Libraries:
       }
     ...
   ```
+  If you want to add another language (eg. French), here the steps:<br>
+    1. Create file `fr.js` inside Folder `Helpers/Language` with JSON variables
+      ```javascript
+        export const encoding = 'fr';
+        export const lang = {
+          label1: 'Label 1',
+          nestedLabel: {
+            label2: 'Nested Label 2'
+          }
+        }
+      ```
+    2. Import `fr.js` to `Helpers/Language/index.js`
+      ```javascript
+      import * as french from './fr';
+      ```
+    3. add `french` into `availLang`'s array
+      ```javascript
+      export const availLang = [
+        ...
+        ...
+        french
+      ];
+      ```
+    4. Ta da, your new language is available to be displayed
+
 
   * Hooks helpers, helper for your own custom functions<br>Code Examples:<br>
   ```javascript
