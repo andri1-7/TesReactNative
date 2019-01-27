@@ -1,16 +1,14 @@
-import english from './en';
-import indonesian from './id';
-// import { consoleLog } from '../Hooks';
+import * as english from './en';
+import * as indonesian from './id';
 
 const TAG = 'LANGUAGE HELPER';
 
-// Imported Language
-const en = 'en'; // English
-const id = 'id'; // Indonesian
-
 // Available Language
-export const availLang = [ en, id ];
-let currentLang = id; // Default language is id
+export const availLang = [
+  english,
+  indonesian
+];
+let currentLang = indonesian.encoding; // Default language is id
 
 /**
  * Get JSON Index value from language JSON variable
@@ -40,8 +38,6 @@ function fetchObject(obj, prop) {
  * @param {string} lang - Language encode (eg. id, en, fr etc.)
  */
 export function setLanguage(lang) {
-  console.log(`${TAG} Set Lang`, `${currentLang} => ${lang}`);
-
   if(lang)
     currentLang = lang;
 }
@@ -60,16 +56,15 @@ export function getLanguage() {
  *
  * @return {string} JSON Index value
  */
-export default function Strings(index) {
+export default function lang(index) {
   let lang = {};
 
-  switch (currentLang) {
-    case en:
-      lang = english;
+  // Iterate available language
+  for (let i of availLang) {
+    if(currentLang == i.encoding) {
+      lang = i.lang;
       break;
-    case id:
-      lang = indonesian;
-      break;
+    }
   }
 
   let langValue = fetchObject(lang, index);
