@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">kloneApp</string>
+    <string name="map_key">YOUR_MAP_API_KEY</string>
 </resources>
