@@ -2,7 +2,7 @@
 import thunkMiddleware from 'redux-thunk';
 import { createLogger } from 'redux-logger';
 import { createStore, applyMiddleware, compose } from 'redux';
-import AppReducer from '../../Reducers';
+import AppReducer from 'kloneApp/src/Reducers';
 
 const loggerMiddleware = createLogger(
   {

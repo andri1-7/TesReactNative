@@ -5,9 +5,10 @@ import {
 } from 'react-navigation';
 
 // ***** Import Pages ***** //
-import Splash from '../Pages/Splash';
-import Home from '../Pages/Home';
-import Counter from '../Pages/Counter';
+// ** Front Pages
+import Splash from 'kloneApp/src/Pages/Splash';
+import Home from 'kloneApp/src/Pages/Home';
+import Counter from 'kloneApp/src/Pages/Counter';
 // ***** /Import Pages ***** //
 
 const MainStack = createStackNavigator({

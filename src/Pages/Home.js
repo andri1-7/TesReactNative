@@ -4,8 +4,8 @@ import {Button, Icon, Text} from 'native-base';
 
 import { connect } from 'react-redux';
 
-import MainStyle from '../Styles/MainStyle';
-import lang from '../Helpers/Language';
+import MainStyle from 'kloneApp/src/Styles/MainStyle';
+import lang from 'kloneApp/src/Helpers/Language';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',

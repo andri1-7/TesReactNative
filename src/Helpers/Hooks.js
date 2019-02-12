@@ -1,7 +1,7 @@
 /**
  * Use this Helper to create your own custom functions
  */
-import lang from './Language';
+import lang from 'kloneApp/src/Helpers/Language';
 import moment from 'moment';
 import { Alert } from 'react-native';
 

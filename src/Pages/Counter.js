@@ -13,9 +13,9 @@ import {
  */
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import AppActions from '../Actions';
+import AppActions from 'kloneApp/src/Actions';
 
-import MainStyle from '../Styles/MainStyle';
+import MainStyle from 'kloneApp/src/Styles/MainStyle';
 
 class Counter extends Component {
   render() {
