@@ -5,6 +5,11 @@ After Pull:<br>
 2. `react-native upgrade`
 3. answer no (`n`) for all questions
 
+Renaming React Native App (If you want to completely rename your App)
+1.  Install [react-native-rename](https://www.npmjs.com/package/react-native-rename) via npm or yarn (Global Install)
+2.  run in terminal `react-native-rename "New App" -b com.yourpackagename`
+3.  then run `watchmen watch-del-all` inside your project root folder
+
 Additional step (for iOS):<br>
 4. `cd ios`
 5. `pod install`
