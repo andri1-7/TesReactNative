@@ -7,13 +7,15 @@ import {
 // ***** Import Pages ***** //
 // ** Front Pages
 import Splash from 'kloneApp/src/Pages/Splash';
-import Home from 'kloneApp/src/Pages/Home';
-import Counter from 'kloneApp/src/Pages/Counter';
+import Contact from 'kloneApp/src/Pages/Contact';
+import AddContact from 'kloneApp/src/Pages/AddContact';
+import EditContact from 'kloneApp/src/Pages/AddContact';
 // ***** /Import Pages ***** //
 
 const MainStack = createStackNavigator({
-  Home: Home,
-  Counter: Counter
+  Contact: Contact,
+  AddContact: AddContact,
+  EditContact: EditContact
 });
 
 const AppNavigator = createSwitchNavigator({

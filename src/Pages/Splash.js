@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
 class Splash extends Component {
   componentDidMount() {
     setTimeout(() => {
-      this.props.navigation.navigate('Home');
+      this.props.navigation.navigate('Contact');
     }, 3500);
   }
 

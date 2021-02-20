@@ -20,6 +20,7 @@ const hourInDay = 24;
 const dayInWeeks = 7;
 const weekInMonths = 4;
 const monthInYear = 12;
+const api = 'http://www.omdbapi.com';
 
 export function consoleLog(TAG: String, message:String, force:Boolean = false){
   if(__DEV__ || force === true) { // if in Development mode
